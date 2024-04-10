@@ -1,53 +1,136 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
 }
 
 header {
+    height: 80px;
     display: flex;
-    justify-content: space-between;
-    font-weight: 300;
-    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.header {
+header div {
+    font-size: normal;
+    color: #555;
+
+}
+
+.spacing {
+    padding-left: 51px;
+}
+
+.center {
+    margin-top: 30px;
+}
+
+main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-weight: 300;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
-main{
-    display: grid;
-    margin-top: 200px;
-}
-.main{
-    display: grid;
-    justify-content: center;
-    font-weight: 300;
-}
-
-h1 {
-    display: grid;
-    justify-content: center;
+main h1 {
+    font-size: 3em;
     font-weight: 900;
-    font-size: 70px;
+    color: #333;
+    margin-top: 55px;
 }
 
-img{
-    max-width: 100%;
+main p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-footer{
+main img {
+    width: 100%;
+    max-width: 75vw;
+    margin-bottom: 20px;
+}
+
+.space-row {
+    display: flex;
+    margin-bottom: 130px;
+}
+
+.number {
+    position: relative;
+    right: 500px;
+}
+
+.text {
+    position: relative;
+    left: 500px;
+}
+
+footer {
     display: grid;
-    grid-template-areas:
-    "aside section";
-    
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
-.aside{
-    grid-area: aside;
+
+.aside,
+.section {
+    width: 70%;
+    text-align: start;
 }
-.section{
-    grid-area: section;
+
+
+
+footer h4 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: start;
+    margin-left: 220px;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 220px;
+}
+
+@media screen and (max-width: 768px) {
+    main h1 {
+        font-size: 2em;
+        margin-top:20px;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    main img {
+        max-width: 100%;
+    }
+    .space-row{
+        margin-bottom: 0;
+    }
+    footer{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    footer h4 {
+        font-size: 0.9em;
+        margin-left: 65px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        margin-left: 65px;
+    }
 }
