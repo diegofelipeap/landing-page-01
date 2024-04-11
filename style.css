@@ -107,7 +107,7 @@ footer p {
 @media screen and (max-width: 768px) {
     main h1 {
         font-size: 2em;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     main p {
@@ -117,13 +117,16 @@ footer p {
     main img {
         max-width: 100%;
     }
-    .space-row{
+
+    .space-row {
         margin-bottom: 0;
     }
-    footer{
+
+    footer {
         margin-top: 0;
         margin-bottom: 0;
     }
+
     footer h4 {
         font-size: 0.9em;
         margin-left: 65px;
