@@ -33,8 +33,8 @@ main p {
     margin-bottom: 20px;
 }
 
-main img {
-    width: 100%;
+img {
+    max-height: 75vh;
     max-width: 75vw;
     margin-bottom: 20px;
 }
