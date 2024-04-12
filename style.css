@@ -83,7 +83,7 @@ footer p {
     margin-left: 220px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     main h1 {
         font-size: 2em;
         margin-top: 20px;
@@ -114,5 +114,12 @@ footer p {
     footer p {
         font-size: 0.8em;
         margin-left: 65px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 528px) {
+    footer p {
+        min-width: 200px;
     }
 }
